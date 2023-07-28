@@ -1,0 +1,210 @@
+@media (max-width: 1022px) {
+  /* Thông tin navbar */
+  #nav-bar {
+    /* padding: 20px 20px; */
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    font-size: 20px;
+    margin: 25px auto;
+  }
+  .P1 a,
+  .P2 a,
+  .P3 a {
+    font-size: 14px;
+  }
+  .P1,
+  .P3 {
+    flex-basis: 0%; /* Thu gọn kích thước của .P1 và .P3 */
+  }
+
+  .P2 {
+    display: none; /* Ẩn .P2 */
+  }
+
+  .hien-thi-chu {
+    display: none;
+  }
+  /* Phần mục tiêu nghề nghiệp và thông tin cá nhân */
+  .mt-40 p,
+  li,
+  #target p {
+    font-size: 16px;
+  }
+  /* Phần thông tin nghề nghiệp */
+  #job-info .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #job-info .main{
+    align-self: stretch;
+  }
+  .vt_1 {
+    grid-row: 1/3;
+  }
+  .vt_2 {
+    grid-row: 2/4;
+  }
+  .vt_3 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .vt_4 {
+    grid-column: 2;
+    grid-row: 4/6;
+  }
+  .vt_5 {
+    grid-row: 5/7;
+  }
+  .vt_6 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  #job-info .container .main .hide{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    flex-direction: column;
+  }
+  .hide-mobile{
+    display: none;
+  }
+  /* Chứng chỉ, giải thưởng */
+  #certificate .container {
+    padding: 20px 50px 30px 50px;
+  }
+  #certificate {
+    padding-top: 50px;
+  }
+  .content-certificate img {
+    width: 100%;
+  }
+  .content-certificate {
+    flex-direction: column;
+  }
+
+  /* Dự án */
+  .thoi-gian {
+    gap: 10px;
+  }
+  .title h3 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .khung img {
+    width: 100%;
+    height: auto;
+  }
+
+  .name_work {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .title-project,
+  .content-project {
+    font-size: 15px;
+    text-align: start;
+  }
+  .name p,
+  .work p {
+    margin: 0;
+  }
+  .name_work_year {
+    gap: 15px;
+  }
+  #project .container {
+    padding: 0;
+  }
+  /* digital-cv */
+  /* chung */
+  .table { /* class bao bên trong là 1 bảng*/
+    padding: 20px;
+  }
+  .digital-cv {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 20px;
+  }
+  .goals .cuoi-content,
+  .team .cuoi-content,
+  .time-line .cuoi-content,
+  .primary .cuoi-content {
+    font-size: 16px;
+  }
+  /* 1. Goals */
+  .goals {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  /* 2. Scopes */
+  .scopes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .scopes-tr {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .scopes-tr .scopes-td:first-child {
+    padding-bottom: 0;
+    margin-bottom: 16px;
+  } 
+  .scopes-content {
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .scopes-tbody {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 15px;
+  }
+  .scopes-tbody tr:first-child {
+    grid-column: 1/2;
+    width: 100%;
+  }
+  /* 3. Team */
+  .team {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .team .chua { /*khoảng cách giữa hình ảnh và nội dung bên trong của phần team*/
+    gap: 10px;
+  }
+  .team .chua i { /*kích thước của các icon*/
+    font-size: 30px;
+  }
+  /* 4. Primary */
+  .primary {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .primary .chua {
+    gap: 10px;
+  }
+  /* 5. TimeLine */
+  .time-line {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .time-line .cuoi::before {
+    left: -10px;
+    width: auto;
+  }
+  .time-line .chua { /*Bao hàm phần nội dung bên trong timeline*/
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 15px;
+  }
+  /* Content */
+  .chua { /* class này giúp chứa nội dung content bên trong*/
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 0px;
+  }
+}

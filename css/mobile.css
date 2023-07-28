@@ -1,0 +1,253 @@
+@media (max-width: 768px) {
+  /* navbar */
+  #nav-bar {
+    display: block;
+  }
+  .flex-mobile {
+    display: flex;
+  }
+  .P1,
+  .P3 {
+    padding: 0px 20px;
+  }
+  #nav-bar a {
+    border: none;
+  }
+  .P1,
+  .P3 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  /* Mục tiêu nghề nghiệp và thông tin cá nhân */
+  .bg-grey {
+    grid-template-columns: 1fr;
+  }
+  .mt-40 p,
+  li,
+  #target p {
+    font-size: 14px;
+  }
+  /* Thông tin nghề nghiệp */
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .hover-effect {
+    box-shadow: none;
+  }
+  #job-info .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .vt_1 {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  .vt_2 {
+    grid-row: 5;
+    grid-column: 1/3;
+  }
+  .vt_3 {
+    grid-row: 4;
+    grid-column: 1/3;
+  }
+  .vt_4 {
+    grid-row: 6;
+    grid-column: 1/3;
+  }
+  .vt_5 {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+  .vt_6 {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+  .content-language-info {
+    font-size: 20px;
+  }
+  .main-title h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .container h1 {
+    text-transform: none;
+  }
+  #job-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Chứng chỉ, giải thưởng */
+  #certificate {
+    margin: 40px;
+  }
+  #certificate .section-title {
+    font-size: 34px;
+    font-weight: 500;
+  }
+  .main-certificate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .line {
+    display: none;
+  }
+  .content-certificate:last-child {
+    border-bottom: none;
+  }
+  .content-certificate {
+    border-bottom: 1px solid red;
+    padding: 20px 0;
+  }
+  .content-certificate-tag-p p:first-child {
+    font-weight: 600;
+  }
+  .content-certificate-tag-p p {
+    font-size: 14px;
+  }
+
+  /* Dự án */
+  #project {
+    padding-top: 30px;
+  }
+  #project .section-title {
+    grid-column: 1/2;
+  }
+  #project .container {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    row-gap: 25px;
+    padding-left: 0;
+  }
+  .name p {
+    margin: 0;
+  }
+  .name_work {
+    font-size: 15px;
+    gap: 7px;
+  }
+  .name_work_year {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .title h3 {
+    font-size: 20px;
+    /* margin: 20px; */
+    padding-left: 15px;
+  }
+  .title-project,
+  .content-project {
+    font-size: 20px;
+    text-align: start;
+    font-weight: normal;
+  }
+  .thoi-gian {
+    padding-left: 30px;
+  }
+
+  /* Footer */
+  #footer .container ul {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-new {
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hide-footer {
+    display: none;
+  }
+  /* digital-cv */
+  .digital-cv {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 20px;
+  }
+
+  .goals {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .scopes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .team {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .primary {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .time-line {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .chua {
+    gap: 10px;
+  }
+  .table {
+    padding: 20px;
+  }
+  .scopes-tr {
+    gap: 0;
+  }
+  .scopes-tbody {
+    grid-template-columns: 1fr;
+  }
+  .scopes-tbody tr:first-child {
+    grid-column: 1/2;
+  }
+  .chua {
+    padding-left: 10px;
+  }
+  .time-line .cuoi::before {
+    left: -10px;
+    width: auto;
+  }
+  .scopes-tr .scopes-td:first-child {
+    padding-bottom: 0;
+    margin-bottom: 16px;
+  }
+  .scopes-tr .scopes-td:last-child {
+    padding-top: 0;
+  }
+  .scopes-content {
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .team .chua {
+    gap: 10px;
+  }
+  .team .chua .cuoi {
+    width: 100%;
+  }
+  .team .chua i {
+    font-size: 30px;
+  }
+  .primary .chua {
+    gap: 10px;
+  }
+  .time-line .chua {
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 15px;
+  }
+  .goals .cuoi-content,
+  .team .cuoi-content,
+  .time-line .cuoi-content,
+  .primary .cuoi-content {
+    font-size: 16px;
+  }
+  #job-info .hide {
+    display: inherit;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}

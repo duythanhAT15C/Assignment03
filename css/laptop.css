@@ -1,0 +1,379 @@
+img {
+  height: 300px;
+}
+/* Xây dựng Navbar */
+#nav-bar {
+  /* overflow: hidden; */
+  width: 768px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* width: 1000px; */
+  margin: 0 auto;
+}
+#nav-bar a {
+  color: black;
+  text-transform: uppercase;
+  padding: 25px 25px;
+  margin: 0;
+  text-decoration: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.055);
+  font-size: 13px;
+}
+
+.color-icon {
+  color: rgba(0, 0, 255, 0.63);
+}
+.P1 {
+  flex: 1;
+}
+a:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.055);
+}
+.P2 {
+  flex: 1;
+  font-size: 15px;
+}
+
+.P3 {
+  flex: 1;
+}
+
+/* Phần mục tiêu nghề nghiệp và thông tin cá nhân */
+
+#personal-info {
+  background-color: rgba(0, 0, 0, 0.041);
+  height: 1fr;
+}
+.row {
+  font-size: 25px;
+  padding-left: 10px;
+}
+ul {
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+.row-main {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mt-40 p,
+li,
+#target p {
+  line-height: 1.8;
+  color: rgb(138, 134, 134);
+}
+.mt-40 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 0px;
+}
+.mt-40 span {
+  font-weight: bold;
+}
+.color-info {
+  color: black;
+}
+.mt-40 .email-sv {
+  font-weight: normal;
+}
+.icon {
+  display: flex;
+  gap: 6px;
+}
+/* Phần thông tin nghề nghiệp */
+/* 1. Chung tất cả của phần thông tin nghề nghiệp */
+#job-info {
+  margin: 40px;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, minmax(10px, auto));
+  border: 1px solid gray;
+  padding: 40px 15px 15px 25px;
+  gap: 15px;
+}
+/* 2. Chung hàng trên */
+.main-title {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+.main-title h1 {
+  grid-column: 1/4;
+  font-size: 28px;
+}
+.main-title i {
+  align-self: start;
+  font-size: 36px;
+}
+
+/* 3. Tất cả */
+.hien-tai {
+  background-color: rgba(0, 0, 255, 0.63);
+  padding: 2px 15px;
+  color: white;
+  border-radius: 100px;
+}
+
+/* Tạo bảng thông tin nghề nghiệp với 2 hàng và 3 cột */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.length {
+  align-self: baseline;
+}
+/* tạo dấu chấm đầu dòng */
+.content-top ul {
+  list-style: disc;
+  padding: 0;
+}
+/* tạo dấu chấm đầu dòng */
+.content-top li::marker {
+  color: rgba(0, 0, 255, 0.63);
+  font-size: 2em;
+  width: 20px;
+}
+.content-top p {
+  text-align: justify;
+}
+.content-top p:first-child {
+  font-weight: bold;
+}
+
+/* 4. Sở thích */
+.content-hobby .size-icon {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.border-icon {
+  border: 1px solid rgba(0, 0, 255, 0.63);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+.hobby-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  justify-items: center;
+  column-gap: 15px;
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+.hobby-item p {
+  display: inline;
+  font-size: 12px;
+  justify-self: center;
+}
+/* 5. Ngôn ngữ
+- Tạo màu thanh kinh nghiệm dưới chân */
+.experience {
+  width: 50px;
+  height: 2px;
+  background-color: #ddd;
+  display: inline-block;
+}
+/* -Tạo màu thanh kinh nghiệm dưới chân */
+.experience-color {
+  background-color: rgba(0, 0, 255, 0.63);
+}
+/* - Tạo flexbox cho nội dung phần ngôn ngữ*/
+.main-content-language {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.main-bottom-row {
+  row-gap: 15px;
+}
+/* Chứng chỉ */
+.section-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.vertical-line {
+  width: 1px;
+  height: auto;
+  background-color: red;
+  margin-left: 50px;
+}
+.content-certificate img {
+  width: 200px;
+  height: auto;
+}
+.content-certificate p:nth-child(1) {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.content-certificate p {
+  font-size: 14px;
+  color: rgb(138, 134, 134);
+  /* line-height: 1px; */
+  margin-bottom: 0;
+}
+.content-certificate {
+  display: flex;
+  gap: 20px;
+}
+#certificate {
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 50px;
+  margin: 40px;
+  /* padding: 50px 180px 50px 180px; */
+}
+.main-certificate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+#certificate .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 40px;
+  padding: 50px 35px;
+}
+.line {
+  height: 1px;
+  background-color: red;
+  grid-column: 1/-1;
+}
+/* Dự án */
+.mo-ta {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.mo-ta-1 {
+  border: 1px solid rgba(0, 0, 0, 0.098);
+}
+.dong-ke {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.098);
+  grid-column: 1/-1;
+}
+.thoi-gian {
+  display: flex;
+  gap: 45px;
+}
+.main-project {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.khung {
+  border: 1px solid rgba(0, 0, 0, 0.098);
+}
+.phan-dau {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* gap: 10px; */
+}
+#project .container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+#project .container a {
+  display: grid;
+}
+#project .section-title {
+  grid-column: 1/4;
+}
+.main-project img {
+  height: 250px;
+  width: 100%;
+}
+#project {
+  margin: 40px;
+}
+.title-time-project {
+  padding: 15px;
+  font-size: 14px;
+}
+.title-project {
+  padding-left: 16px;
+  padding-top: 20px;
+}
+.content-project {
+  padding: 20px 20px;
+  text-align: justify;
+}
+.color-font-project {
+  color: rgb(138, 134, 134);
+}
+.thoi-gian .year {
+  background-color: rgba(0, 0, 255, 0.63);
+  width: 50px;
+  height: 25px;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 104px/100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.year p {
+  margin-bottom: 0;
+}
+.title h3 {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.container h1 {
+  text-transform: uppercase;
+}
+.color-icon-project {
+  color: rgb(46, 45, 45);
+}
+.name_work {
+  display: flex;
+  gap: 20px;
+}
+.name_work_year {
+  display: flex;
+  gap: 32px;
+}
+/* footer */
+#footer {
+  background: #f7f7f7;
+  margin: 0 40px;
+}
+#footer .container {
+  padding: 20px;
+}
+#footer .container ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-new {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  color: rgb(138, 134, 134);
+}
+.color-icon-footer {
+  color: rgba(0, 0, 255, 0.63);
+  font-size: 25px;
+}
+#footer a {
+  text-decoration: none;
+}

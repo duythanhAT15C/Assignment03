@@ -1,0 +1,314 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+}
+html {
+  height: 100%;
+}
+.body {
+  min-height: 100%;
+  display: flex;
+}
+/* Toàn bộ background */
+/* .chung {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 40px;
+} */
+
+/*  */
+.bg-grey {
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 40px 40px;
+}
+
+section > .container {
+  /* width: 1170px; */
+  margin: auto;
+  display: block;
+  padding: 15px 35px;
+}
+/* mục tiêu nghề nghiệp và thông tin nghề nghiệp*/
+.P2 h3 {
+  font-weight: 600;
+}
+/* Phần thông tin cá nhân hàng trên */
+.content-top {
+  padding: 0px 25px 25px 25px;
+}
+.img-certificate {
+  width: 100%;
+  align-items: center;
+}
+.main-header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#nav-bar a:active {
+  background-color: #04aa6d;
+  color: white;
+}
+#project a {
+  text-decoration: none;
+}
+.digital-cv {
+  background-color: blue;
+  width: 100vw;
+  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+.background-color {
+  background-color: rgb(240, 248, 255);
+}
+
+/* Digital-cv */
+.table {
+  /* height: 100vh;  */
+  padding: 5px 20px 0px 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse; /* Gộp các đường viền ô */
+}
+
+td {
+  border-bottom: 1px solid black; /* Đường viền ô */
+  padding: 10px; /* Khoảng cách giữa nội dung và đường viền */
+  vertical-align: middle;
+}
+.table-non-border td {
+  border-bottom: none;
+}
+tr.separator td {
+  border-top: 1px solid black;
+}
+.chua {
+  display: flex;
+  gap: 50px;
+  padding: 5px 0px 5px 20px;
+  align-items: center;
+}
+.cuoi {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.goals {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.goals i {
+  font-size: 25px;
+}
+.goals-tbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.goals-tbody .name {
+  display: inline-block;
+  width: 100%;
+}
+.goals-tbody tr {
+  grid-column: 1/3;
+}
+.goals-tbody tr td {
+  display: inline-block;
+  width: 100%;
+}
+.team {
+  grid-row: 1/3;
+}
+.team .chua {
+  gap: 30px;
+}
+.team .chua i {
+  font-size: 30px;
+}
+.time-line {
+  grid-column: 4/5;
+  grid-row: 1/4;
+}
+.scopes {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.primary {
+  grid-row: 3/4;
+}
+.chua .fa-flag-checkered {
+  font-size: 25px;
+}
+.goals .name,
+.team .name,
+.time-line .name,
+.scopes .name,
+.primary .name {
+  color: blue;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.time-line .dau {
+  background-color: rgb(158, 136, 255);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+}
+.time-line .chua {
+  padding-left: 0;
+  gap: 30px;
+  position: relative;
+}
+
+.time-line .cuoi::before {
+  content: "";
+  position: absolute;
+  font-size: 15px;
+  bottom: -5px;
+  right: 0;
+  left: 58px;
+  border-bottom: 1px dotted blue;
+  width: auto;
+}
+.time-line .cuoi-title {
+  font-weight: 600;
+}
+.scopes td,
+.primary td {
+  border: none;
+}
+.scopes-tbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.scopes-tbody tr:first-child {
+  grid-column: 1/3;
+}
+.scopes-tr {
+  display: flex;
+  padding-left: 10px;
+  gap: 50px;
+}
+.scopes-td {
+  font-size: 15px;
+}
+.scopes-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.scopes-content {
+  line-height: 20px;
+  margin-bottom: 16px;
+  word-spacing: 1.4px;
+}
+.goals .cuoi-title,
+.team .cuoi-title,
+.time-line .cuoi-title {
+  font-weight: 700;
+}
+.goals .cuoi-content,
+.team .cuoi-content,
+.time-line .cuoi-content,
+.primary .cuoi-content {
+  font-size: 14px;
+}
+.scopes tr:first-child {
+  border-bottom: 1px solid black;
+}
+.primary i {
+  font-size: 25px;
+}
+.primary .chua {
+  padding-left: 10px;
+  gap: 30px;
+}
+.primary .cuoi-content {
+  line-height: 20px;
+  word-spacing: 1.5px;
+}
+.view-more,
+.view-less {
+  display: flex;
+  background-color: green;
+  width: 40%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 2px;
+  border-radius: 50px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+.hide {
+  display: none;
+}
+.view-more-container {
+  position: relative;
+}
+
+.view-more {
+  position: absolute;
+  left: 0;
+}
+.hover-effect {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+.email input {
+  width: 100%;
+  padding: 2px 2px 4px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.199); /* Đường viền màu đen */
+  transition: box-shadow 0.3s; /* Thời gian chuyển tiếp */
+}
+.email input::placeholder {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.349);
+}
+.email input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #74c0fc; /* Đổ bóng màu xanh khi focus */
+}
+.email button {
+  background-color: rgb(48, 121, 180);
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.email button:active {
+  filter: brightness(0.8);
+}
+.email p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.342);
+}
+.error-message {
+  color: red;
+}
